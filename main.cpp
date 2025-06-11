@@ -2,13 +2,15 @@
 
 int main(void)
 {
-    //* DEFINING SCREEN SIZE
-    const int screenWidth = 800;
-    const int screenHeight = 450;
-    //* INITIALAIZING WINDOW
+    const int screenWidth = 1280;
+    const int screenHeight = 720;
+    const Vector3 CubePlace = {640.0f,360.0f,0.0f};
+
+    Camera3D camera = {0};
+
     InitWindow(screenWidth, screenHeight, "Raylib");
 
-    SetTargetFPS(60);  //* SETTING TARGETED AMOUNT OF FPS        
+    SetTargetFPS(60);        
 
     //* MAIN GAME LOOP
     while (!WindowShouldClose())  
@@ -22,15 +24,14 @@ int main(void)
         //----------------------------------------------------------------------------------
         BeginDrawing();
 
+            DrawCube(CubePlace,100.0f,100.0f,0.0f,BLUE);
             ClearBackground(RAYWHITE);
-
-            DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
 
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
 
-    CloseWindow();        //* CLOSE WINDOW AND OPENGL CONTEXT
+    CloseWindow();        
 
     return 0;
 }
