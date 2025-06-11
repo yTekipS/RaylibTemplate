@@ -6,7 +6,7 @@ int main(void)
     const int screenWidth = 800;
     const int screenHeight = 450;
     //* INITIALAIZING WINDOW
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    InitWindow(screenWidth, screenHeight, "Raylib");
 
     SetTargetFPS(60);  //* SETTING TARGETED AMOUNT OF FPS        
 
