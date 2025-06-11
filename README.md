@@ -1,6 +1,6 @@
   Raylib template
 
 To use add following include path to your c++ extension:
-    ${workspaceFolder}\Raylib
+    c:\msys64\mingw64\include
 
  Targegt: Code.exe + --extensions-dir "Changed Extension Path" 
