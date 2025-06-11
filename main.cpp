@@ -2,23 +2,23 @@
 
 int main(void)
 {
-    // DEFINING SCREEN SIZE
+    //* DEFINING SCREEN SIZE
     const int screenWidth = 800;
     const int screenHeight = 450;
-    // INITIALAIZING WINDOW
+    //* INITIALAIZING WINDOW
     InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
-    SetTargetFPS(60);  // SETTING TARGETED AMOUNT OF FPS        
+    SetTargetFPS(60);  //* SETTING TARGETED AMOUNT OF FPS        
 
-    // MAIN GAME LOOP
+    //* MAIN GAME LOOP
     while (!WindowShouldClose())  
     {
-        // UPDATE
+        //* UPDATE
         //----------------------------------------------------------------------------------
         // TODO: Update your variables here
         //----------------------------------------------------------------------------------
 
-        // DRAW
+        //* DRAW
         //----------------------------------------------------------------------------------
         BeginDrawing();
 
@@ -30,7 +30,7 @@ int main(void)
         //----------------------------------------------------------------------------------
     }
 
-    CloseWindow();        // CLOSE WINDOW AND OPENGL CONTEXT
+    CloseWindow();        //* CLOSE WINDOW AND OPENGL CONTEXT
 
     return 0;
 }
