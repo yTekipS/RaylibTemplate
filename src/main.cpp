@@ -1,5 +1,4 @@
-#include <raylib.h>
-#include "button.hpp"
+#include "connect.hpp"
 
 int main(void)
 {
@@ -22,7 +21,7 @@ int main(void)
         //* DRAW
         //----------------------------------------------------------------------------------
         BeginDrawing();
-    ct.DrawCentered_DEFAULT("Hello, World!", screenWidth/2, screenHeight/2, 150, WHITE, 200);
+        ct.DrawCentered_DEFAULT("Hello, World!", screenWidth / 2, screenHeight / 2, 150, WHITE, 200);
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
